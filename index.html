@@ -1,0 +1,735 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>06.01</title>
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__inner">
+				<div class="header__top">
+					<div class="header__top-inner">
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__item-link" href="#">
+										Home
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__item-link" href="#">
+										Product
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__item-link" href="#">
+										Pricing
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__item-link" href="#">
+										About
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__item-link" href="#">
+										Contact
+									</a>
+								</li>
+							</ul>
+							<div class="logo header__logo">
+								<a class="logo__link" href="#">
+									<img class="logo__img" src="./img/logo.svg" alt="logo">
+								</a>
+							</div>
+							<button class="menu__btn">
+								<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.66797 8H33.3346V10.6667H6.66797V8ZM13.3346 14.6667H33.3346V17.3333H13.3346V14.6667ZM21.668 21.3333H33.3346V24H21.668V21.3333Z"
+										fill="white" />
+								</svg>
+							</button>
+						</nav>
+						<nav class="header__social">
+							<ul class="header__social-list">
+								<li class="header__social-item">
+									<a class="header__social-link" href="#">
+										<svg width="34" height="28" viewBox="0 0 34 28" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li class="header__social-item">
+									<a class="header__social-link" href="#">
+										<svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li class="header__social-item">
+									<a class="header__social-link" href="#">
+										<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__content">
+					<div class="header__content-inner">
+						<h1 class="header__content-title">
+							The best products
+							start with Figma
+						</h1>
+						<div class="header__content-text-items">
+							<p class="header__content-text-item">
+								Most calendars are designed for teams.
+							</p>
+							<p class="header__content-text-item">
+								Slate is designed
+								for freelancers
+							</p>
+						</div>
+						<div class="header__content-button">
+							<a class="header__content-link" href="#">
+								Try For Free
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="features">
+		<div class="container">
+			<div class="features__inner">
+				<div class="features__top">
+					<h2 class="title features__title">
+						Features
+					</h2>
+					<div class="features__sub-text-items">
+						<p class="sub-text features__sub-text-item">
+							Most calendars are designed for teams.
+						</p>
+						<p class="sub-text features__sub-text-item">
+							Slate is designed
+							for freelancers
+						</p>
+					</div>
+				</div>
+				<div class="features__content">
+					<ul class="features__list">
+						<li class="features__item">
+							<img class="features__item-img" src="./img/features-icon1.svg" alt="">
+							<h6 class="features__item-title  features__item-title--one">
+								OpenType features
+								Variable fonts
+							</h6>
+							<p class="features__item-text ">
+								Slate helps you see how
+								many more days you need
+								to work to reach your
+								financial goal.
+							</p>
+						</li>
+						<li class="features__item">
+							<img class="features__item-img" src="./img/features-icon2.svg" alt="">
+							<h6 class="features__item-title features__item-title--two">
+								Design with real data
+							</h6>
+							<p class="features__item-text">
+								Slate helps you see how
+								many more days you need
+								to work to reach your
+								financial goal.
+							</p>
+						</li>
+						<li class="features__item">
+							<img class="features__item-img" src="./img/features-icon3.svg" alt="">
+							<h6 class="features__item-title features__item-title--three">
+								Fastest way to
+								take action
+							</h6>
+							<p class="features__item-text ">
+								Slate helps you see how
+								many more days you need
+								to work to reach your
+								financial goal.
+							</p>
+						</li>
+					</ul>
+					<div class="features__video">
+						<a href="https://www.youtube.com/watch?v=4LRJoKWgT9U&list=RD4LRJoKWgT9U&start_radio=1" data-fancybox
+							class="features__video-link">
+							< <img class="features__video-img" src="./img/video-play.svg" alt=""> 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="organize">
+		<div class="container">
+			<div class="organize__inner">
+				<div class="organize__inf">
+					<h2 class="title organize__title">
+						Fastest way to
+						organize
+					</h2>
+					<div class="organize__sub-text-items">
+						<p class="sub-text organize__sub-text-item">
+							Most calendars are designed for teams.
+						</p>
+						<p class="sub-text organize__sub-text-item">
+							Slate is designed
+							for freelancers
+						</p>
+					</div>
+					<div class="organize__button">
+						<a class="organize__button-link" href="#">
+							Try For Free
+						</a>
+					</div>
+				</div>
+				<img class="organize__img" src="./img/organize-img.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="subscription">
+		<div class="container">
+			<div class="subscription__inner">
+				<img src="./img/form-img.png" alt="" class="subscription__img">
+				<div class="subscription__inf">
+					<h6 class="form__pre-title">
+						At your fingertips
+					</h6>
+					<h2 class="title subscription__title">
+						Lightning fast
+						prototyping
+					</h2>
+					<h5 class="subscription__sub-title">
+						Subscribe to our Newsletter
+					</h5>
+					<p class="subscription__text">
+						Available exclusivery on Figmaland
+					</p>
+					<form class="subscription__form" action="">
+						<input type="text" class="subscription__form-text" placeholder="Your Email">
+						<button class="subscription__form-button">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partners">
+		<div class="container">
+			<div class="partners__inner">
+				<h2 class="title partners__title">
+					Partners
+				</h2>
+				<p class="sub-text partners__sub-text">
+					Most calendars are designed for teams.
+					Slate is designed for freelancers
+				</p>
+				<ul class="partners__list">
+					<li class="partners__item partners__item--one">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/google.svg" alt="">
+					</li>
+					<li class="partners__item partners__item--two">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/amazon.svg" alt="">
+					</li>
+					<li class="partners__item partners__item--three">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/microsoft.svg" alt="">
+					</li>
+					<li class="partners__item partners__item--four">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/uber.svg" alt="">
+					</li>
+					<li class="partners__item  partners__item--five">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/dropbox.svg" alt="">
+					</li>
+					<li class="partners__item partners__item--sex">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/google.svg" alt="">
+					</li>
+					<li class="partners__item partners__item--seven">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/uber.svg" alt="">
+					</li>
+					<li class="partners__item  partners__item--eight">
+						<h5 class="partners__item-title">
+							Client Name
+						</h5>
+						<img class="partners__item-img" src="./img/amazon.svg" alt="">
+					</li>
+				</ul>
+				<div class="partners__button">
+					<a class="partners__button-link" href="#">
+						Try For Free
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="testimonials">
+		<div class="container">
+			<div class="testimonials__inner">
+				<h2 class="title testimonials__title">
+					Testimonials
+				</h2>
+				<div class="testimonials__logo">
+					<img class="testimonials__logo-img" src="./img/testimonials-logo.svg" alt="">
+				</div>
+				<p class="sub-text testimonials__sub-text ">
+					Most calendars are designed for teams. Slate is designed for freelancers
+					who want a simple way to plan their schedule.
+				</p>
+				<div class="person">
+					<img class="person__img" src="./img/person-icon.png" alt="">
+					<div class="person__data">
+						<p class="person__data-name">
+							Organize across
+						</p>
+						<p class="person__data-position">
+							Ui designer
+						</p>
+					</div>
+				</div>
+				<div class="testimonials__button">
+					<a href="#" class="testimonials__button-link">
+						More Testimonials
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pricing">
+		<div class="container">
+			<div class="pricing__inner">
+				<h2 class="title pricing__title">
+					Pricing
+				</h2>
+				<p class="sub-text pricing__sub-text">
+					Most calendars are designed for teams.
+					Slate is designed for freelancers
+				</p>
+				<div class="pricing__columns">
+					<div class="pricing__column">
+						<h4 class="pricing__column-title">
+							FREE
+						</h4>
+						<p class="pricing__column-sub-text">
+							Organize across all
+							apps by hand
+						</p>
+						<div class="pricing__column-price">
+							<p class="pricing__column-price-numb">
+								0
+							</p>
+							<div class="pricing__column-price-column">
+								<span class="pricing__column-price-icon">$</span>
+								<span class="pricing__column-price-text">Per Month</span>
+							</div>
+						</div>
+						<ul class="pricing__column-list">
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+						</ul>
+						<button class="pricing__column-button">
+							Order Now
+						</button>
+					</div>
+					<div class="pricing__column-standard">
+						<h4 class="pricing__column-standard-title">
+							STANDARD
+						</h4>
+						<p class="pricing__column-standard-sub-text">
+							Organize across all
+							apps by hand
+						</p>
+						<div class="pricing__column-standard-price">
+							<p class="pricing__column-standard-price-numb">
+								10
+							</p>
+							<div class="pricing__column-standard-price-column">
+								<span class="pricing__column-standard-price-icon">$</span>
+								<span class="pricing__column-standard-price-text">Per Month</span>
+							</div>
+						</div>
+						<ul class="pricing__column-standard-list">
+							<li class="pricing__column-standard-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-standard-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-standard-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-standard-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-standard-item">
+								Pricing Feature
+							</li>
+						</ul>
+						<button class="pricing__column-standard-button">
+							Order Now
+						</button>
+					</div>
+					<div class="pricing__column">
+						<h4 class="pricing__column-title">
+							BUSINESS
+						</h4>
+						<p class="pricing__column-sub-text">
+							Organize across all
+							apps by hand
+						</p>
+						<div class="pricing__column-price">
+							<p class="pricing__column-price-numb">
+								99
+							</p>
+							<div class="pricing__column-price-column">
+								<span class="pricing__column-price-icon">$</span>
+								<span class="pricing__column-price-text">Per Month</span>
+							</div>
+						</div>
+						<ul class="pricing__column-list">
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+							<li class="pricing__column-item">
+								Pricing Feature
+							</li>
+						</ul>
+						<button class="pricing__column-button">
+							Order Now
+							<button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts__inner">
+				<h2 class="title contacts__title">
+					Contact Us
+				</h2>
+				<p class="sub-text contacts__sub-text">
+					Most calendars are designed for teams.
+					Slate is designed for freelancers
+				</p>
+				<div class="contacts__row">
+					<form class="contacts__form">
+						<h5 class="contacts__form-title">
+							Contact Us
+						</h5>
+						<input class="contacts__form-text" placeholder="Your Name" type="text">
+						<input class="contacts__form-email" placeholder="Your Email" type="email">
+						<textarea class="contacts__form-textarea" placeholder="Your Message"></textarea>
+						<button class="contacts__form-button" type="submit">
+							Send
+						</button>
+					</form>
+					<div class="contacts__data">
+						<div class="contacts__data-inner">
+							<ul class="contacts__data-list">
+								<li class="contacts__data-item">
+									<img class="contacts__data-img" src="./img/adders-icon.svg" alt="">
+									<address class="contacts__data-adrres">
+										6386 Spring St undefined Anchorage,
+										Georgia 12473 United States
+									</address>
+								</li>
+								<li class="contacts__data-item">
+									<img class="contacts__data-img" src="./img/tel-icon.svg" alt="">
+									<p class="contacts__data-tel"><a class="contacts__data-tel-link"
+											href="tel:+7843555-0130">(843) 555-0130</a></p>
+								</li>
+								<li class="contacts__data-item">
+									<img class="contacts__data-img" src="./img/email-icon.svg" alt="">
+									<p class="contacts__data-email"><a class="contacts__data-email-link"
+											href="mailto:vlad@htmlbook.ru">willie.jennings@example.com</a></p>
+								</li>
+							</ul>
+							<img class="contacts__data-map-img" src="./img/map-img.png" alt="">
+						</div>
+						<nav class="contacts__social">
+							<ul class="contacts__social-list">
+								<li class="contacts__social-item">
+									<a class="contacts__social-link  contacts__social-link--blue" href="#">
+										<svg width="34" height="28" viewBox="0 0 34 28" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li class="contacts__social-item">
+									<a class="contacts__social-link  contacts__social-link--blue" href="#">
+										<svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li class="contacts__social-item">
+									<a class="contacts__social-link  contacts__social-link--blue" href="#">
+										<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"
+												fill="white" />
+										</svg>
+									</a>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<nav class="footer__menu">
+					<div class="footer__menu-list">
+						<h5 class="footer__menu-title">
+							Pages
+						</h5>
+						<ul class="footer__menu-items">
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Home
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Product
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Pricing
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									About
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__menu-list">
+						<h5 class="footer__menu-title">
+							Tomothy
+						</h5>
+						<ul class="footer__menu-items">
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Eleanor Edwards
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Ted Robertson
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Annette Russell
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Jennie Mckinney
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Gloria Richards
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__menu-list">
+						<h5 class="footer__menu-title">
+							Jane Black
+						</h5>
+						<ul class="footer__menu-items">
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Philip Jones
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Product
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Colleen Russell
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Marvin Hawkins
+								</a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-item-link" href="#">
+									Bruce Simmmons
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+				<div class="footer__contacts">
+					<div class="footer__contacts-inner">
+						<div class="footer__contacts-data">
+							<img class="footer__contacts-addres-icon" src="./img/map-icon-footer.svg" alt="">
+							<address class="footer__contacts-addres">
+								7480 Mockingbird Hill undefined
+							</address>
+						</div>
+						<div class="footer__contacts-data">
+							<img class="footer__contacts-icon" src="./img/tel-icon-footer.svg" alt="">
+							<p class="footer__contacts-tel"><a class="footer__contacts-tel-link" href="tel:+7843555-0130">(843)
+									555-0130</a></p>
+							</img>
+						</div>
+					</div>
+					<nav class="footer__contacts-social">
+						<ul class="footer__contacts-social-list">
+							<li class="footer__contacts-social-item">
+								<a class="footer__contacts-social-link" href="#" >
+									<svg width="34" height="28" viewBox="0 0 34 28" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16632C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+											fill="white" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-social-item">
+								<a class="footer__contacts-social-link" href="#" >
+									<svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M30.7517 0.989624H1.29255C0.58409 0.989624 0.0117188 1.562 0.0117188 2.27046V31.7296C0.0117188 32.438 0.58409 33.0104 1.29255 33.0104H30.7517C31.4601 33.0104 32.0325 32.438 32.0325 31.7296V2.27046C32.0325 1.562 31.4601 0.989624 30.7517 0.989624ZM27.0533 10.3357H24.4956C22.4903 10.3357 22.1021 11.2883 22.1021 12.6892V15.7752H26.8892L26.2648 20.6064H22.1021V33.0104H17.1108V20.6104H12.9361V15.7752H17.1108V12.2129C17.1108 8.07822 19.6365 5.82476 23.3268 5.82476C25.096 5.82476 26.613 5.95685 27.0573 6.01689V10.3357H27.0533Z"
+											fill="white" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__contacts-social-item">
+								<a class="footer__contacts-social-link" href="#" >
+									<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"
+											fill="white" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
